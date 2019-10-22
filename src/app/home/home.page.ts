@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  
+  public valor = 0;
   constructor() {}
+  
+  public increment () {
+    this.valor++
+  }
+
+  public decrement () {
+    this.valor--
+  }
 
 }

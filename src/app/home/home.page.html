@@ -8,7 +8,12 @@
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-button shape="round" fill clear (click)="decrement()">
+      <ion-icon slot="icon-only" color="danger" name="remove-circle"></ion-icon>
+    </ion-button>
+    {{ valor }}
+    <ion-button shape="round" fill clear (click)="increment()">
+        <ion-icon slot="icon-only" color="success" name="add-circle"></ion-icon>
+    </ion-button>
   </div>
 </ion-content>
